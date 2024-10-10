@@ -1,0 +1,1 @@
+This repo hosts the [Old Documentation for Animancer v7.4](http://KybernetikGames.github.io/animancer) (not the source code of Animancer itself). Tis version has been superseded by [Animancer v8.0](https://kybernetik.com.au/animancer/docs/changes/animancer-v8-0).

@@ -1,0 +1,1187 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/animancer-v7-4/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/animancer-v7-4/assets/img/favicon.ico" type="image/x-icon">
+        <title>Animancer - Animancer v7.0</title>
+        <link href="/animancer-v7-4/assets/css/highlight.css" rel="stylesheet">
+        <link href="/animancer-v7-4/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/animancer-v7-4/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/animancer-v7-4/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/animancer-v7-4/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/animancer-v7-4/assets/css/override.css" rel="stylesheet">
+        <script src="/animancer-v7-4/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/animancer-v7-4/assets/js/bootstrap.min.js"></script>        
+        <script src="/animancer-v7-4/assets/js/app.min.js"></script>         
+        <script src="/animancer-v7-4/assets/js/highlight.pack.js"></script>   
+        <script src="/animancer-v7-4/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/animancer-v7-4/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/animancer-v7-4/assets/js/mermaid.min.js"></script>
+        <script src="/animancer-v7-4/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/animancer-v7-4/assets/js/html5shiv.min.js"></script>
+        <script src="/animancer-v7-4/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/animancer-v7-4/" class="logo">
+                            <span>Animancer</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/animancer-v7-4/docs/introduction/features"><img src="/animancer-v7-4/images/icons/features.png" height="20px" width="20px" style="left:-7px"> Features</a></li>
+        <li><a href="/animancer-v7-4/docs/download"><img src="/animancer-v7-4/images/icons/download.png" height="20px" width="20px" style="left:-7px"> Download</a></li>
+        <li class="active"><a href="/animancer-v7-4/docs"><img src="/animancer-v7-4/images/icons/docs.png" height="20px" width="7.5px" style="left:-5px"> Documentation</a></li>
+        <li><a href="/animancer-v7-4/docs/help"><img src="/animancer-v7-4/images/icons/help.png" height="20px" width="10.625px" style="left:-4px"> Help</a></li>
+        <li><a href="/animancer-v7-4/api/Animancer/AnimancerComponent"><img src="/animancer-v7-4/images/icons/api.png" height="20px" width="18.125px" style="left:-3px"> API v7.4</a></li>
+        <li><a href="https://kybernetik.com.au"><img src="/animancer-v7-4/images/icons/kybernetik.png" height="20px" width="20px" style="left:-2px"> Other Assets</a></li>
+
+<li style="width:100%">
+<form class="search-form" name="search" action="/animancer-v7-4/search">
+<span><input class="search-input" id="search" name="q" type="text" placeholder="Search..."></span>
+<div class="search-button"><button type="submit"><i class="fa fa-search"></i></button></div>
+</form>
+</li> 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav><div style="text-align:center"><a href="/animancer/docs/changes/animancer-v8-0/upgrade-guide#how-to-upgrade" style="font-size:1.42em; color:white">This is the old Animancer v7.4 documentation. Animancer v8.0 is now available.</a></div>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#upgrade-guide">Upgrade Guide</a></p>
+<p><a href="#major-features">Major Features</a></p>
+<p><a href="#examples">Examples</a></p>
+<p><a href="#minor-features">Minor Features</a></p>
+<p><a href="#changes">Changes</a></p>
+<p><a href="#improvements">Improvements</a></p>
+<p><a href="#fsm">FSM</a></p>
+<p><a href="#fixes">Fixes</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    
+
+                    <ul class="sidebar-menu">
+                        
+
+                <li><a href="/animancer-v7-4/docs/download">Download</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/introduction">Introduction</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/introduction/features">Features</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer">Mecanim vs. Animancer</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/why">Why Replace Mecanim?</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/why/simplicity">Simplicity</a></li>
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/why/transparency">Transparency</a></li>
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/why/adaptability">Adaptability</a></li>
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/why/clarity">Clarity</a></li>
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/why/safety">Safety</a></li>
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/why/reliability">Reliability</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/comparison">Comparison</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/comparison/playing">Playing</a></li>
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/comparison/waiting">Waiting</a></li>
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/comparison/speed-and-time">Speed and Time</a></li>
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/comparison/weapon-animations">Weapon Animations</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/introduction/mecanim-vs-animancer/performance">Performance</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/introduction/glossary">Glossary</a></li>
+                <li><a href="/animancer-v7-4/docs/introduction/cs">C# in Unity</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples">Examples</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/basics">01 Basics</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/basics/quick-play">01-01 Quick Play</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/basics/movement">01-02 Basic Movement</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/basics/action">01-03 Basic Action</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/basics/action/holding">Holding a Pistol</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/examples/basics/transitions">01-04 Transitions</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/basics/character">01-05 Basic Character</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/basics/scene-setup">Basic Scene Setup</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/basics/input">Input</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/fine-control">02 Fine Control</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/fine-control/named-animations">02-01 Named Animations</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/fine-control/speed-and-time">02-02 Speed and Time</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/fine-control/doors">02-03 Doors</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/fine-control/update-rate">02-04 Update Rate</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/fine-control/solo-animation">02-05 Solo Animation</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/locomotion">03 Locomotion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/locomotion/root-motion">03-01 Root Motion</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/locomotion/linear-blending">03-02 Linear Blending</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/locomotion/directional-blending">03-03 Directional Blending</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/directional-sprites">04 Directional Sprites</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/directional-sprites/basics">04-01 Directional Basics</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/directional-sprites/character">04-02 Directional Character</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/events">05 Events</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/events/footsteps">05-01 Footstep Events</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/events/golf">05-02 Golf Events</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/events/utilities">05-03 Event Utilities</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/fsm">06 State Machines</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/fsm/characters">06-01 Characters</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/fsm/interruptions">06-02 Interruptions</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/fsm/brains">06-03 Brains</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/fsm/weapons">06-04 Weapons</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/fsm/platformer">Platformer Game Kit</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/layers">07 Layers</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/layers/basic">07-01 Basic Layers</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/layers/dynamic">07-02 Dynamic Layers</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/ik">08 Inverse Kinematics</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/ik/puppet">08-01 Puppet</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/ik/uneven-ground">08-02 Uneven Ground</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/animator-controllers">09 Animator Controllers</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/basics">09-01 Hybrid Basics</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/character">09-02 Hybrid Character</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit">09-03 3D Game Kit</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/problems">Problems with the Mecanim Character</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/respawn">Respawn</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/idle">Idle</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/locomotion">Locomotion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/locomotion/movement">Movement</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/locomotion/turning">Turning</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/airborne">Airborne</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/landing">Landing</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/attack">Attack</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/flinch">Flinch</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/animator-controllers/3d-game-kit/die">Die</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/jobs">10 Animation Jobs</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/jobs/two-bone-ik">10-01 Two Bone IK</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/jobs/damping">10-02 Damping</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/jobs/lean">10-03 Lean</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/examples/integration">Integration</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/examples/integration/animation-rigging">Animation Rigging</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/integration/dynamic-bone">Dynamic Bone</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/integration/final-ik">Final IK</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/integration/hairibar-ragdoll">Hairibar Ragdoll</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/integration/lod">Level of Detail (LOD)</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/integration/odin-inspector">Odin Inspector</a></li>
+                <li><a href="/animancer-v7-4/docs/examples/integration/puppet-master">Puppet Master</a></li><li><a href="/animancer-v7-4/docs/examples/integration/spine">Spine</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/examples/no-video-tutorials">No Video Tutorials</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual">User Manual</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/getting">Getting Animations</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/getting/mixamo">Mixamo</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/getting/importing">Importing</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/getting/animation-window">Animation Window</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/playing">Playing Animations</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/playing/states">States</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/playing/keys">Keys</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/playing/inspector">Inspector</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/playing/component-types">Component Types</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/playing/edit-mode">Playing in Edit Mode</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/playing/directional-sets">Directional Animation Sets</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/transitions">Transitions</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/transitions/types">Transition Types</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/transitions/assets">Transition Assets</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/transitions/previews">Transition Previews</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/blending">Blending</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/blending/fading">Fading</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/blending/fading/modes">Fade Modes</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/blending/fading/custom">Custom Fading</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/manual/blending/layers">Layers</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/blending/mixers">Mixers</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/blending/mixers/creation">Mixer Creation</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/blending/mixers/smoothing">Mixer Smoothing</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/blending/mixers/synchronization">Mixer Synchronization</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/events">Events</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/events/animation">Animation Events</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/events/animancer">Animancer Events</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/events/animancer/usage">Usage</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/events/animancer/behaviour">Behaviour</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/events/animancer/shared">Shared Events</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/events/animancer/garbage">Garbage Collection</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/events/animancer/ultevents">UltEvents</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/manual/events/end">End Events</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/fsm">Finite State Machines</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/fsm/overview">Overview</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/fsm/state-types">1. State Types</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/fsm/initialization">2. Initialization</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/fsm/changing-states">3. Changing States</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/fsm/keys">Keys</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/fsm/utilities">Utilities</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/fsm/utilities/input-buffer">Input Buffers</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/fsm/utilities/state-selector">State Selectors</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/fsm/utilities/owned-states">Owned States</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/animator-controllers">Animator Controllers</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/animator-controllers/conversion">Conversion</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/animator-controllers/controller-states">Controller States</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/manual/timeline">Timeline</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/ik">Inverse Kinematics</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/tools">Animancer Tools</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/tools/pack-textures">Pack Textures</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/tools/modify-sprites">Modify Sprites</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/tools/rename-sprites">Rename Sprites</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/tools/generate-sprite-animations">Generate Sprite Animations</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/tools/remap-sprite-animation">Remap Sprite Animation</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/tools/remap-animation-bindings">Remap Animation Bindings</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/manual/other">Other Features</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/manual/other/animation-clip-inspector">Animation Clip Inspector</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/other/polymorphic">Polymorphic Drawer</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/other/redirect-root-motion">Redirect Root Motion</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/other/sprite-renderer-texture-swap">Sprite Renderer Texture Swap</a></li>
+                <li><a href="/animancer-v7-4/docs/manual/other/units">Units Attributes</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/bugs">Unity Bugs</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/bugs/events">Animation Events</a></li>
+                <li><a href="/animancer-v7-4/docs/bugs/animator-controller-speed">Animator Controller Speed</a></li>
+                <li><a href="/animancer-v7-4/docs/bugs/paused-skinned-mesh-update">Paused Skinned Mesh Update</a></li>
+                <li><a href="/animancer-v7-4/docs/bugs/reorderable-array-height">Reorderable Array Height</a></li>
+                <li><a href="/animancer-v7-4/docs/bugs/serialized-array-initialization">Serialized Array Initialization</a></li>
+                <li><a href="/animancer-v7-4/docs/bugs/stabilize-feet">Stabilize Feet</a></li>
+                <li><a href="/animancer-v7-4/docs/bugs/timeline">Timeline</a></li>
+                <li><a href="/animancer-v7-4/docs/bugs/timing">Timing</a></li>
+                <li><a href="/animancer-v7-4/docs/bugs/update-modes">Update Modes</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/source">Source Code</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/source/dlls">DLLs</a></li>
+                <li><a href="/animancer-v7-4/docs/source/creating-custom-states">Creating Custom States</a></li>
+                <li><a href="/animancer-v7-4/docs/source/graph-structure">Graph Structure</a></li>
+                <li><a href="/animancer-v7-4/docs/source/asset-sources">Asset Sources</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="/animancer-v7-4/docs/changes">Change Log</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v7-4">Animancer v7.4</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v7-3">Animancer v7.3</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v7-2">Animancer v7.2</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v7-1">Animancer v7.1</a></li>
+                <li class="selected"><a href="/animancer-v7-4/docs/changes/animancer-v7-0">Animancer v7.0</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v6-1">Animancer v6.1</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/changes/animancer-v6-0">Animancer v6.0</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v6-0/test">Test Releases</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v5-3">Animancer v5.3</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v5-2">Animancer v5.2</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v5-1">Animancer v5.1</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/changes/animancer-v5-0">Animancer v5.0</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v5-0/test">Test Releases</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v4-4">Animancer v4.4</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v4-3">Animancer v4.3</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v4-2">Animancer v4.2</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v4-1">Animancer v4.1</a></li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/changes/animancer-v4-0">Animancer v4.0</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v4-0/test">Test Releases</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v3-1">Animancer v3.1</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v3-0">Animancer v3.0</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v2-0">Animancer v2.0</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v1-3">Animancer v1.3</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v1-2">Animancer v1.2</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v1-1">Animancer v1.1</a></li>
+                <li><a href="/animancer-v7-4/docs/changes/animancer-v1-0">Animancer v1.0</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/animancer-v7-4/docs/help">Help and FAQ</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/animancer-v7-4/docs/help/debugging">Debugging</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+		<section class="content-header">
+			<h1>Animancer v7.0</h1>
+		</section>
+	<section class="content">
+		<blockquote class="blockquote">
+<p>Released 2021-07-29</p>
+</blockquote>
+<h1 id="upgrade-guide">Upgrade Guide</h1>
+<p>See the <a href="../animancer-v6-0#upgrade-guide">Animancer v6.0 Upgrade Guide</a> if you are upgrading from a version older than that, then follow the <a href="#upgrade-process">Upgrade Process</a> explained below to upgrade to this version.</p>
+<h2 id="major-changes">Major Changes</h2>
+<ul>
+<li>Support for Unity 2018.4 has been dropped. <strong>The minimum supported version is now 2019.4</strong> (though it might still work on earlier 2019 versions).</li>
+<li>All <a href="../../manual/transitions/types">Transition Scripts</a> have been moved and renamed (see the <a href="#renaming">Renaming</a> table).</li>
+<li><a href="../../manual/transitions/assets">Transition Assets</a> now use <a href="https://docs.unity3d.com/ScriptReference/SerializeReference.html"><code>[SerializeReference]</code></a> fields. Unfortunately, this means that <strong>all Transition Assets will lose their data</strong> when upgrading from an earlier version of Animancer.</li>
+</ul>
+<p></p><details><summary>Click here for more information about these changes and why they were necessary:</summary><p>
+</p><p>Why drop support for Unity 2018?</p>
+<ul>
+<li>The <a href="https://docs.unity3d.com/ScriptReference/SerializeReference.html"><code>[SerializeReference]</code></a> system was only introduced in Unity 2019. Continuing to support 2018 would be possible using <a href="https://docs.unity3d.com/Manual/PlatformDependentCompilation.html">Platform Dependent Compilation</a>, but would significantly complicate certain sections of code as well as the testing and releasse process of Animancer as a whole (much moreso than simply adding another supported version would).</li>
+<li>Animancer v7.0 is already being specifically tested in 3 other versions of Unity:
+<ul>
+<li>2019.4 (LTS)</li>
+<li>2020.3 (LTS)</li>
+<li>2021.1 (Latest Stable)</li>
+</ul>
+</li>
+<li>Unity 2018.4 is currently still listed in Unity Hub, but it has already exceeded its 2 year LTS lifespan so new projects should not be started with it. Existing projects will either need to stay on an older version of Animancer or update to a newer version of Unity first.</li>
+</ul>
+<p>What benefits have the change brought?</p>
+<ul>
+<li>The <a href="../../manual/transitions/types#serialized-references">Serialized References</a> section explains the increased flexibility that the change allows.</li>
+</ul>
+<p>Why were the <a href="../../manual/transitions/types">Transition Scripts</a> moved?</p>
+<ul>
+<li><a href="https://docs.unity3d.com/ScriptReference/SerializeReference.html"><code>[SerializeReference]</code></a> fields store the full type and assembly name of the value they are assigned.</li>
+<li>Previously, those classes were compiled into <code>Animancer.Lite.dll</code> for Animancer Lite while Animancer Pro included them as regular scripts.</li>
+<li>That meant upgrading from Lite to Pro would change the assembly name, causing all <a href="https://docs.unity3d.com/ScriptReference/SerializeReference.html"><code>[SerializeReference]</code></a> fields to both lose their data and log errors about it in the console, which is unacceptable. The upgrade process from Lite to Pro must be as seamless as possible.</li>
+<li>So all <a href="../../manual/transitions/types">Transition Scripts</a> have been moved to the <em>Utilities/Transitions</em> folder and their source code is now included in Animancer Lite.</li>
+</ul>
+<p>Why were the <a href="../../manual/transitions/types">Transition Scripts</a> renamed?</p>
+<ul>
+<li>Since they are now in a different assembly from the <a href="../../manual/playing/states">State</a> classes, the <a href="../../manual/transitions/types">Transition</a> classes can no longer be nested inside them.</li>
+<li>With <code>ClipState.Transition</code> no longer being inside <code><a href="/animancer-v7-4/api/Animancer/ClipState">ClipState</a></code> it obviously can't just be called <code>Transition</code> so the logical choice is <code><a href="/animancer-v7-4/api/Animancer/ClipTransition">ClipTransition</a></code>.</li>
+<li>Unfortunately, <code><a href="/animancer-v7-4/api/Animancer/ClipTransition">ClipTransition</a></code> was previously the <a href="../../manual/transitions/assets">Transition Asset</a> type, so it also had to be renamed to <code><a href="/animancer-v7-4/api/Animancer/ClipTransitionAsset">ClipTransitionAsset</a></code>.</li>
+<li>All transition types follow the same naming convention, which is listed in the <a href="#renaming">Renaming</a> table.</li>
+</ul>
+<p></p></details><p></p>
+<h2 id="upgrade-process">Upgrade Process</h2>
+<blockquote class="blockquote">
+<p>It is recommended to avoid updating Animancer in the middle of the project unless absolutely necessary. More-so for this version than usual because steps #5 and #6 in particular could take a long time.</p>
+</blockquote>
+<ol>
+<li>See the <a href="../animancer-v6-0#upgrade-guide">Animancer v6.0 Upgrade Guide</a> if you are upgrading from a version older than that.</li>
+<li><strong>Backup your project</strong>.</li>
+<li>Update your project to Unity 2019.4 or newer.</li>
+<li>Delete your previous version of Animancer (located at <em>Assets/Plugins/Animancer</em> by default). This will cause compile errors in any of your scripts that reference Animancer.</li>
+<li>Go through your scripts and change the names of Animancer classes according to the <a href="#renaming">Renaming</a> table.</li>
+</ol>
+<p></p><details><summary>6. If you have any <a href="../../manual/transitions/assets">Transition Assets</a>, you can manually edit them with a text editor to prevent them from losing their data. Click here for an explanation of how to do that.</summary><p>
+</p><p>The issue is that the <a href="https://docs.unity3d.com/ScriptReference/SerializeField.html"><code>[SerializeField]</code></a> stores its data in a slightly different format to <a href="https://docs.unity3d.com/ScriptReference/SerializeReference.html"><code>[SerializeReference]</code></a> and Unity doesn't support conversion between them. However, the format is relatively simple so you can open any <a href="../../manual/transitions/assets">Transition Asset</a> files with any text editor and make the following change. This can be much easier with a file comparison tool in a version control system.</p>
+<p>The old format looks like this:</p>
+<pre><code>  _Transition:
+    _FadeDuration: 0.25
+    // ... Other fields in the transition.
+</code></pre>
+<p>And the new format looks like this:</p>
+<pre><code>  _Transition:// The actual field
+    id: 0// The index of the reference
+  references:// The list of all references
+    version: 1
+    00000000:// The id: 0 refers to this reference
+      type: {class: ClipTransition, ns: Animancer, asm: Animancer}// The assigned type
+      data:// The actual data all looks the same
+        _FadeDuration: 0.25
+        // ... Other fields in the transition.
+</code></pre>
+<p>So there are 3 changes to make:</p>
+<ol>
+<li>Replace the <code>_Transition:</code> line with:</li>
+</ol>
+<pre><code>  _Transition:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: ClipTransition, ns: Animancer, asm: Animancer}
+      data:
+        _FadeDuration: 0.25
+</code></pre>
+<ol start="2">
+<li>Replace that <code><a href="/animancer-v7-4/api/Animancer/ClipTransition">ClipTransition</a></code> with the appropriate type for the asset (e.g. if the asset is a <code><a href="/animancer-v7-4/api/Animancer/LinearMixerTransitionAsset">LinearMixerTransitionAsset</a></code> then the type will need to be <code><a href="/animancer-v7-4/api/Animancer/LinearMixerTransition">LinearMixerTransition</a></code>).</li>
+<li>Add 4 spaces to the start of every line after that (starting with the <code>_FadeDuration:</code>) because the indentation is important.</li>
+</ol>
+<p></p></details><p></p>
+<ol start="7">
+<li><a href="../../download">Download and import the new version of Animancer.</a></li>
+<li>If you still have any compile errors, use <code>Ctrl + F</code> to search this page for any relevant changes.</li>
+</ol>
+<h2 id="renaming">Renaming</h2>
+<p>Make sure you rename <a href="../../manual/transitions/assets">Transition Assets</a> first (<code><a href="/animancer-v7-4/api/Animancer/ClipTransition">ClipTransition</a></code> to <code><a href="/animancer-v7-4/api/Animancer/ClipTransitionAsset">ClipTransitionAsset</a></code>) before doing any regular <a href="../../manual/transitions">Transitions</a> (<code>ClipState.Transition</code> to <code><a href="/animancer-v7-4/api/Animancer/ClipTransition">ClipTransition</a></code>) to avoid confusion.</p>
+<table class="table">
+<thead>
+<tr>
+<th>Old Name</th>
+<th>New Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code><a href="/animancer-v7-4/api/Animancer/ClipTransition">ClipTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/ControllerTransition">ControllerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/Float1ControllerTransition">Float1ControllerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/Float2ControllerTransition">Float2ControllerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/Float3ControllerTransition">Float3ControllerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/LinearMixerTransition">LinearMixerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/ManualMixerTransition">ManualMixerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/MixerTransition2D">MixerTransition2D</a></code><br><code><a href="/animancer-v7-4/api/Animancer/PlayableAssetTransition">PlayableAssetTransition</a></code></td>
+<td><code><a href="/animancer-v7-4/api/Animancer/ClipTransitionAsset">ClipTransitionAsset</a></code><br><code><a href="/animancer-v7-4/api/Animancer/ControllerTransitionAsset">ControllerTransitionAsset</a></code><br><code><a href="/animancer-v7-4/api/Animancer/Float1ControllerTransitionAsset">Float1ControllerTransitionAsset</a></code><br><code><a href="/animancer-v7-4/api/Animancer/Float2ControllerTransitionAsset">Float2ControllerTransitionAsset</a></code><br><code><a href="/animancer-v7-4/api/Animancer/Float3ControllerTransitionAsset">Float3ControllerTransitionAsset</a></code><br><code><a href="/animancer-v7-4/api/Animancer/LinearMixerTransitionAsset">LinearMixerTransitionAsset</a></code><br><code><a href="/animancer-v7-4/api/Animancer/ManualMixerTransitionAsset">ManualMixerTransitionAsset</a></code><br><code><a href="/animancer-v7-4/api/Animancer/MixerTransition2DAsset">MixerTransition2DAsset</a></code><br><code><a href="/animancer-v7-4/api/Animancer/PlayableAssetTransitionAsset">PlayableAssetTransitionAsset</a></code></td>
+</tr>
+<tr>
+<td><code>ClipState.Transition</code><br><code>ControllerState.Transition</code><br><code>Float1ControllerState.Transition</code><br><code>Float2ControllerState.Transition</code><br><code>Float3ControllerState.Transition</code><br><code>LinearMixerState.Transition</code><br><code>ManualMixerState.Transition</code><br><code>MixerState.Transition2D</code><br><code>PlayableAssetState.Transition</code></td>
+<td><code><a href="/animancer-v7-4/api/Animancer/ClipTransition">ClipTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/ControllerTransition">ControllerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/Float1ControllerTransition">Float1ControllerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/Float2ControllerTransition">Float2ControllerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/Float3ControllerTransition">Float3ControllerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/LinearMixerTransition">LinearMixerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/ManualMixerTransition">ManualMixerTransition</a></code><br><code><a href="/animancer-v7-4/api/Animancer/MixerTransition2D">MixerTransition2D</a></code><br><code><a href="/animancer-v7-4/api/Animancer/PlayableAssetTransition">PlayableAssetTransition</a></code></td>
+</tr>
+</tbody>
+</table>
+<p>Everything in the <a href="../../examples">Examples</a> with <code>Creature</code> in its name has been renamed to <code>Character</code>.</p>
+<p>Various other things have been renamed but they are generally minor and/or internal so much less likely to be referenced by user code. If you get such errors after importing the new version of Animancer, simply use <code>Ctrl + F</code> to search this page.</p>
+<h1 id="major-features">Major Features</h1>
+<h2 id="platformer">Platformer</h2>
+<p>Removed the old Platformer example and created a much more extensive <a href="/platformer">Platformer Game Kit</a> which has much better character physics, wall jumping, moving platforms, a hit box system, various enemies with different behaviours, and more. It's free and works with <a href="/animancer-v7-4/redirect/lite">Animancer Lite</a>, though it does use some Pro-Only features (<a href="/platformer/docs/package/download">explained here</a>).</p>
+<table class="table">
+  <thead>
+    <tr><th style="width:50%">Old Platformer Example</th>
+    <th style="width:50%">New Platformer Game Kit</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td><img src="old-platformer.png" class="pngif img-responsive"></td>
+      <td><a href="/platformer"><img src="platformer.png" class="pngif img-responsive"></a></td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="time-fields">Time Fields</h2>
+<p><img src="../../manual/transitions/time-field.png" class="pngif img-responsive"></p>
+<p>Improved the way <a href="../../manual/transitions#time-fields">Transition Time Fields</a> are drawn in the Inspector:</p>
+<ul>
+<li>Added a Frame field so they now show their value as Normalized, Seconds, and Frames.</li>
+<li>Standardised the implementation in a base <a href="#units-attribute">Units Attribute</a> with <code>[AnimationTime]</code> and <code>[AnimationSpeed]</code>subclasses.</li>
+<li>Used the same implementation for the Normalized/Pixel fields in the <a href="../../manual/tools/modify-sprites#inspector">Sprite Editor</a>.</li>
+<li>Added options in <code><a href="/animancer-v7-4/api/Animancer.Editor/AnimancerSettings">AnimancerSettings</a></code> to choose which fields are shown.</li>
+<li>These fields now show <a href="../../manual/transitions#approximations">Approximations</a> if there is not enough room to show the full value. For example, <code>1.111111</code> could instead show <code>1.111~</code>.</li>
+<li>You can now Middle Click any of these fields to set them to their <a href="../../manual/transitions#default-values">Default Value</a> (or a secondary default if they were already at the primary value).</li>
+<li>Improved the tooltips on all <a href="../../manual/transitions#fields">Transition Fields</a>.</li>
+</ul>
+<p><img src="transition-tooltips.png" class="pngif img-responsive"></p>
+<h2 id="units-attributes">Units Attributes</h2>
+<p>The <a href="../../manual/other/units">Units Attributes</a> can be used on <code>float</code> fields to give them a suffix indicating what kind of units they represent.</p>
+<p><img src="../../manual/other/units/basics.png" class="pngif img-responsive"></p>
+<p>They allow the value to be displayed in multiple units at the same time:</p>
+<p><img src="../../manual/other/units/multi.png" class="pngif img-responsive"></p>
+<p>You can Middle Click to reset the field to its <code>[DefaultValue]</code>:</p>
+<p><img src="../../manual/other/units/default.png" class="pngif img-responsive"></p>
+<p>And you can specify a <code><a href="/animancer-v7-4/api/Animancer/Value">Validate.Value</a></code> rule to limit the allowed values:</p>
+<p><img src="../../manual/other/units/rule.png" class="pngif img-responsive"></p>
+<h2 id="weight-fields">Weight Fields</h2>
+<p>Improved the way abbreviated weight labels are displayed in the <code><a href="/animancer-v7-4/api/Animancer/AnimancerComponent">AnimancerComponent</a></code> Inspector. In particular, small values near <code>0</code> which aren't exactly <code>0</code> will show as <em><code>~0</code></em> instead of <em><code>0.0</code></em>. The same applies to values near <code>1</code>. <a href="https://github.com/KybernetikGames/animancer/issues/131">#131</a></p>
+<h2 id="unshared-transition-assets">UnShared Transition Assets</h2>
+<p>Added <a href="../../manual/transitions/assets#unshared">UnShared</a> classes to solve issues with the <code><a href="/animancer-v7-4/api/Animancer.FSM/State">State</a></code> and <code>Events</code> on shared <a href="../../manual/transitions/assets">Transition Asset</a>. <a href="https://github.com/KybernetikGames/animancer/issues/112">#112</a></p>
+<h2 id="serialized-references">Serialized References</h2>
+<p>Added <a href="../../manual/other/polymorphic">Polymorphic Drawer</a> system to allow the type of a <code>[SerializeReference]</code> field to be selected. These are used by <a href="../../manual/transitions">Transitions</a>, but you can also use them in your own code to avoid needing to write custom drawers.</p>
+<p>Changed <a href="../../manual/transitions/assets">Transition Assets</a> to use a <code>[SerializeReference]</code> for their <code>Transition</code> field so that child types can be used without requiring their own <a href="../../manual/transitions/assets">Transition Asset</a> and <a href="../../manual/transitions/assets#unshared">UnShared</a> classes.</p>
+<p><img src="serialize-reference-transitions.png" class="pngif img-responsive"></p>
+<p>Also added <code><a href="/animancer-v7-4/api/Animancer/ITransition">ITransition</a></code> interfaces for each state type. For example:</p>
+<ul>
+<li>A <code>[SerializeReference] <a href="/animancer-v7-4/api/Animancer/ITransition">ITransition</a></code> field would allow any kind of transition to be assigned.</li>
+<li>A <code>[SerializeReference] <a href="/animancer-v7-4/api/Animancer/ITransition">ClipState.ITransition</a></code> field would only allow transitions that create <code><a href="/animancer-v7-4/api/Animancer/ClipState">ClipState</a></code>s (i.e. a regular <code><a href="/animancer-v7-4/api/Animancer/ClipTransition">ClipTransition</a></code>, a <code><a href="/animancer-v7-4/api/Animancer/ClipTransitionSequence">ClipTransitionSequence</a></code>, or a <code>MotionTransition</code> from the <a href="../../examples/locomotion/root-motion">Root Motion</a> example).</li>
+</ul>
+<h2 id="improved-transition-event-inspector">Improved Transition Event Inspector</h2>
+<p>Improved the way Transitions display events in the Inspector:</p>
+<ul>
+<li>Selecting and deselecting them now animates their visibility rather than suddenly changing the fields that are shown.</li>
+<li>Holding Ctrl while dragging an event now snaps its time to the nearest multiple of the animation's frame rate.</li>
+</ul>
+<p><img src="animated-transition-events.png" class="pngif img-responsive"></p>
+<h2 id="preview-time-buttons">Preview Time Buttons</h2>
+<p>When the <a href="../../manual/transitions/previews">Transition Preview Window</a> is open, all time fields show a button on the right:</p>
+<ul>
+<li>Left Click it to make the preview show that time.</li>
+<li>Right Click it to set the field to use the current preview time.</li>
+</ul>
+<p>This applies to event times too, which helps massively with getting the values aligned precisely where you want them.</p>
+<p><img src="preview-time-buttons.png" class="pngif img-responsive"></p>
+<h2 id="custom-preview-gui">Custom Preview GUI</h2>
+<p>Added <code><a href="/animancer-v7-4/api/Animancer.Editor/ITransitionGUI">ITransitionGUI</a></code> which can be implemented by transitions to modify their preview scene (to do things like drawing hit boxes in the preview).</p>
+<p>The video below shows the hit box editing system in the new <a href="/platformer">Platformer Game Kit</a>:</p>
+<p><img src="custom-preview-gui.png" class="pngif img-responsive"></p>
+<h2 id="animation-clip-inspector">Animation Clip Inspector</h2>
+<p>Added a custom <a href="../../manual/other/animation-clip-inspector">Animation Clip Inspector</a> to improve the way <code>AnimationClip</code>s are displayed in the Inspector:</p>
+<ul>
+<li>Shows a button to easily open the Animation window.</li>
+<li>Shows <a href="../../manual/events/animation">Animation Events</a>.</li>
+</ul>
+<table class="table">
+  <thead>
+    <tr><th style="width:50%">Unity Default</th>
+    <th style="width:50%">Animancer</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td><img src="../../manual/other/animation-clip-inspector/unity-humanoid.png" class="img-responsive"></td>
+      <td><img src="../../manual/other/animation-clip-inspector/animancer-humanoid.png" class="pngif img-responsive"></td>
+    </tr>
+  </tbody>
+</table>
+<p>There are also a few features specific to <code>Sprite</code> animations:</p>
+<ul>
+<li>Shows the <code>Sprite</code> and details of each frame in the animation.</li>
+<li>Automatically initializes the preview so you don't need to manually drag and drop an object with an <code>Animator</code> and <code>SpriteRenderer</code> into the preview area.</li>
+</ul>
+<table class="table">
+  <thead>
+    <tr><th style="width:50%">Unity Default</th>
+    <th style="width:50%">Animancer</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td><img src="../../manual/other/animation-clip-inspector/unity-sprite.png" class="img-responsive"></td>
+      <td><img src="../../manual/other/animation-clip-inspector/animancer-sprite.png" class="pngif img-responsive"></td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="runtime-events-display">Runtime Events Display</h2>
+<ul>
+<li>Added <code>Events</code> display to the Live Inspector for states that have Animancer Events.</li>
+<li>Added <code>Runtime Events</code> display to Transitions that have initialized their  <code><a href="/animancer-v7-4/api/Animancer/Sequence">AnimancerEvent.Sequence</a></code>.</li>
+</ul>
+<h1 id="examples">Examples</h1>
+<ul>
+<li>Added <a href="../../examples/basics/transitions">Transitions</a> example.</li>
+<li>Added <a href="../../examples/events/utilities">Event Utilities</a> example.</li>
+<li>Added <a href="#units-attributes">Units Attributes</a> to the example scripts where appropriate.</li>
+<li>Removed the <del>Sequence Coroutine</del> example since it was really long, spent lots of time explaining coroutines (there are plenty of other tutorials for that), and wasted time explaining several different approaches which are all worse than simply using a <code><a href="/animancer-v7-4/api/Animancer/ClipTransitionSequence">ClipTransitionSequence</a></code>.</li>
+<li>Removed the <del>Walk and Run</del> example since <a href="../../examples/locomotion/linear-blending">Linear Blending</a> does the same job better.</li>
+<li>Removed the <code>PixelPerfectPositioning</code> script since Unity's <a href="https://docs.unity3d.com/Manual/com.unity.2d.pixel-perfect.html">2D Pixel Perfect</a> package is better (now that they have inbuilt <a href="../../manual/blending/mixers/synchronization">Time Synchronization</a>).</li>
+<li>Renamed the More Brains example to <del>Brain Transplants</del>.</li>
+<li>Renamed everything with <code>Creature</code> in its name to <code>Character</code>.</li>
+<li>Changed the <a href="../../examples/locomotion/linear-blending">Linear Blending</a> example to use the new <a href="../../manual/transitions/assets#unshared">UnShared Transition Asset</a> system.</li>
+<li>Changed the <a href="../../examples/fsm/brains">Brains</a> example <code><a href="/animancer-v7-4/api/Animancer.Examples.AnimatorControllers.GameKit/LocomotionState">LocomotionState</a></code> to use a <a href="../../manual/blending/mixers">Linear Mixer</a> instead of manually synchronizing the <em>Walk</em> and <em>Run</em> animations.</li>
+<li>Changed all <code>[DefaultExecutionOrder]</code> attributes to use constants so they can directly reference each other's values if they are related.</li>
+<li>Improved the <a href="../../examples/layers">Layers</a> script to allow the running state to be toggled without interrupting the action.</li>
+<li>Fixed the <em>Humanoid-GolfSwingReady</em> animation to have 0 length (somehow it was <code>0.000000059604645</code> seconds long).</li>
+<li>Fixed the <code><a href="/animancer-v7-4/api/Animancer.Examples.FineControl/Door">Door</a></code> example script to be usable in prefabs.</li>
+<li>Fixed the <a href="../../examples/animator-controllers/basics">Hybrid Basics</a> example to disable <code>OptionalWarning.NativeControllerHumanoid</code>.</li>
+</ul>
+<h1 id="minor-features">Minor Features</h1>
+<ul>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer/DontAllowFade">DontAllowFade</a></code> for easily detecting accidental fades on <code>Sprite</code> based characters (often due to the default <code>Fade Duration</code> on transitions).</li>
+<li>Added <code>AnimancerUtilities.EditModeSampleAnimation</code> to replace the <code>pauseImmediately</code> parameter from <code>EditModePlay</code>.
+<ul>
+<li>Changed the <code><a href="/animancer-v7-4/api/Animancer/SoloAnimation">SoloAnimation</a></code> component to automatically apply the first frame of its animation in Edit Mode.</li>
+<li>Added an <code>Apply In Edit Mode</code> field to prevent it from doing that if you don't want it to.</li>
+</ul>
+</li>
+<li>Added wrapper methods in <code><a href="/animancer-v7-4/api/Animancer/ControllerState">ControllerState</a></code> for all the methods you would normally access on its <code>Playable</code> (so you can call <code>state.Play(...)</code> instead of <code>state.Playable.Play(...)</code>).</li>
+<li>The <code><a href="/animancer-v7-4/api/Animancer/CustomFade">CustomFade</a></code> system can now be applied to layers rather than only states.</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer/ExitEvent">ExitEvent</a></code> system. <a href="https://github.com/KybernetikGames/animancer/issues/117">#117</a></li>
+<li>Added <code>AnimancerPlayable.UpdatableCount</code> and <code>GetUpdatable</code>.</li>
+<li>Added <code>AnimancerUtilities.Assert</code> which throws an exception (unlike <code>Debug.Assert</code>) and used it where appropriate.</li>
+<li>Added <code>AnimancerState.MoveTime</code> which sets the <code>Time</code> and applies any Root Motion and <a href="../../manual/events/animation">Animation Events</a> (but not <a href="../../manual/events/animancer">Animancer Events</a>) between the old and new time. <a href="https://github.com/KybernetikGames/animancer/issues/120">#120</a></li>
+<li>Added support for <a href="../../manual/events/animancer">Animancer Events</a> on states in <a href="../../manual/blending/mixers">Mixers</a>.</li>
+<li>Changed <code><a href="/animancer-v7-4/api/Animancer/AnimancerPlayable/C552B8EA">AnimancerPlayable.DefaultFadeDuration</a></code> to a property instead of a constant so it can be modified externally.
+<ul>
+<li>Animancer Lite only allows it to be set to <code>0</code> or <code>0.25</code>.</li>
+<li>Restructured various places it was used that require constants (attributes and default parameters).</li>
+<li>Added <code>[DefaultFadeValue]</code> for the <code>FadeDuration</code> field in <a href="../../manual/transitions">Transitions</a>.</li>
+</ul>
+</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer.Editor/TimelineGUI/1D943CE2">TimelineGUI.Current</a></code> property to access the current drawer context.</li>
+<li>Added <code>IPlayableWrapper.NormalizeChildWeights</code> extension method.</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer/ClipTransitionSequence/6C27F927">ClipTransitionSequence.EndEvent</a></code> to easily access the end event of the last transition in the sequence.</li>
+<li>Added support for inheritance in <code>[SerializeReference]</code> fields to the <code><a href="/animancer-v7-4/api/Animancer.Editor/Serialization">Serialization</a></code> system.
+<ul>
+<li>Made <code>Serialization.PropertyAccessor.Field</code> and <code>FieldType</code> private and added <code>GetField</code> and <code>GetFieldElementType</code> methods so that it can support <code>[SerializeReference]</code> fields where inheritance might prevent the <code>FieldInfo</code> from being accessible just based on the field type.</li>
+<li>Fixed <code>Serialization.PropertyAccessor.ResetValue</code> to run the constructor of the field's current type so that it can reset <code>[SerializeReference]</code> fields to the defaults of the current type instead of null.</li>
+</ul>
+</li>
+<li>Added <code>AnimancerEditorUtilities.GetNameCS</code> for displaying user-friendly type names.</li>
+<li>Improved <a href="../../manual/transitions/previews">Transition Preview Window</a>:
+<ul>
+<li>While playing, the preview time indicator in the <code><a href="/animancer-v7-4/api/Animancer.Editor/TimelineGUI">TimelineGUI</a></code> is now properly updated.</li>
+<li>Fixed time scrubbing for negative speeds.</li>
+<li>Modifying any <a href="#time-fields">Time Field</a> in a <a href="../../manual/transitions">Transition</a>'s Inspector now sets the preview to that time (if the modified <a href="../../manual/transitions">Transition</a> is the one being previewed).</li>
+<li>Modifying any field in a <a href="../../manual/transitions">Transition</a> now updates the preview to show the change.</li>
+<li>Added <code>TemporarySettings.PreviewModels</code> so it can remember scene objects used for previews as long as they still exist.</li>
+<li>It now shows a warning when the selected model has no <code>Animator</code> component.</li>
+<li>Added <code>Preview</code> Context Menu Function to <code>AnimationClip</code> assets so they can be previewed directly without needing a Transition.</li>
+</ul>
+</li>
+<li>Improved <code>[EventNames]</code> attribute to allow it to be placed on the transition class itself. For example, every <code>ProjectileAttackTransition</code> in the <a href="/platformer">Platformer Game Kit</a> should have a <code>"Fire"</code> event, so putting the attribute on that class avoids the need to put it on every <code>ProjectileAttackTransition</code> field.</li>
+</ul>
+<h1 id="changes">Changes</h1>
+<ul>
+<li>Changed the default <code>NormalizedStartTime</code> for <a href="../../manual/transitions">Transitions</a> to be <code>0</code> (start at beginning) instead of <code>NaN</code> (continue from current time).</li>
+<li>Reworked <code><a href="/animancer-v7-4/api/Animancer/IUpdatable">IUpdatable</a></code>:
+<ul>
+<li>Merged <code>EarlyUpdate</code> and <code>LateUpdate</code> into <code>Update</code>.</li>
+<li>Removed <code>OnDestroy</code> since it was only used by <code><a href="/animancer-v7-4/api/Animancer/EventDispatcher">AnimancerState.EventDispatcher</a></code>. Destroying the graph while events are in use will simply allow the dispatcher to be garbage collected instead of going out of its way to ensure that they always get object-pooled. Destroying the graph will generally only happen when the object is destroyed, so there is going to already be a bunch of garbage collection anyway.</li>
+<li>The time it gets called is chosen by using either <code>AnimancerPlayable.RequirePreUpdate</code> or <code>RequirePostUpdate</code>.</li>
+<li><code><a href="/animancer-v7-4/api/Animancer/AnimancerNode">AnimancerNode</a></code> now implements <code><a href="/animancer-v7-4/api/Animancer/IUpdatable">IUpdatable</a></code> so it can use the same loop as custom objects instead of needing separate loops.</li>
+<li><code><a href="/animancer-v7-4/api/Animancer/EventDispatcher">AnimancerState.EventDispatcher</a></code> now stores the previous time at the end of its (post) <code>Update</code> instead of doing it in <code>PreUpdate</code> (which was why both methods used to be separate).</li>
+</ul>
+</li>
+<li>Renamed <code>TimeRuler</code> to <code><a href="/animancer-v7-4/api/Animancer.Editor/TimelineGUI">TimelineGUI</a></code>.</li>
+<li>Renamed <code>AnimancerEvent.Sequence.Serializable.Sequence</code> to <code>Events</code>.</li>
+<li>Moved <code>AnimancerState.EffectiveWeight</code> to <code><a href="/animancer-v7-4/api/Animancer/AnimancerNode">AnimancerNode</a></code>.</li>
+<li>Moved <code>IKeyedListItem</code> into <code><a href="/animancer-v7-4/api/Animancer/Key">Key</a></code> and renamed it to <code>IListItem</code>.</li>
+<li>Moved <code>AnimationBindings.IsChangingPlayMode</code> into <code><a href="/animancer-v7-4/api/Animancer.Editor/AnimancerEditorUtilities">AnimancerEditorUtilities</a></code> since it's also used by the <a href="../../manual/transitions/previews">Transition Preview Window</a>.</li>
+<li>Moved unnecessary <code><a href="/animancer-v7-4/api/Animancer/ITransitionDetailed">ITransitionDetailed</a></code> members out to separate interfaces:
+<ul>
+<li><code><a href="/animancer-v7-4/api/Animancer/IHasEvents">IHasEvents</a></code>: <code>Events</code>, <code>SerializedEvents</code>.</li>
+<li><code><a href="/animancer-v7-4/api/Animancer/IMotion">IMotion</a></code>: <code>AverageAngularSpeed</code>, <code>AverageVelocity</code>. Removed these from <code><a href="/animancer-v7-4/api/Animancer/AnimancerState">AnimancerState</a></code> and only implemented them in <code><a href="/animancer-v7-4/api/Animancer/ClipState">ClipState</a></code> and <code>MixerState</code>.</li>
+<li>Removed <code>BaseState</code> and <code>MainObject</code>.</li>
+</ul>
+</li>
+<li>Changed the <code><a href="/animancer-v7-4/api/Animancer/DirectionalAnimationSet">DirectionalAnimationSet</a></code> methods like <code>SetLeft</code>, <code>SetRight</code>, etc. to use regular property setters but include an assertion that <code>AllowSetClips</code> must have been called beforehand to avoid accidentally modifying the set (since they are assets and will retain any such changes after leaving Play Mode).</li>
+<li>Removed various methods in <code><a href="/animancer-v7-4/api/Animancer.Editor/AnimancerEditorUtilities">AnimancerEditorUtilities</a></code> which are no longer being used: <code>ShouldAllowReference</code>, <code>Invoke</code>, <code>RegisterNonCriticalIssue</code>, <code>RegisterNonCriticalMissingType</code>, <code>RegisterNonCriticalMissingMember</code>, <code>AppendNonCriticalIssues</code>.</li>
+<li>Removed <code>AnimancerEvent.Sequence.RemoveAll</code> since it is unlikely to be useful (it was the same as <code>Clear</code> without removing the end event).</li>
+<li>Removed <code>GUIElementWidth</code> since it wasn't used much and didn't offer much benefit.</li>
+<li>Removed <code>AnimancerEditorUtilities.GetCachedResult</code> and replaced it with manual caching.</li>
+<li>Made <code>ConversionCache</code> Editor-Only.</li>
+<li>Removed usage of the <code>new()</code> generic constraint where possible because it is actually quite inefficient.
+<ul>
+<li>Removed <code>AnimancerUtilities.NewIfNull</code>. Unfortunately, Unity doesn't yet support the <code>??=</code> operator.</li>
+</ul>
+</li>
+<li>Removed <code>AnimancerPlayable.StateDictionary.Create&lt;T&gt;</code> and <code>AnimancerLayer.CreateState&lt;T&gt;</code> since they didn't do much more than <code>new T()</code> anyway.</li>
+<li>Removed <code>maxChildDepth</code> parameters from <code>AnimancerNode.GetDescription</code> and <code>AppendDescription</code> methods since they were basically pointless.</li>
+<li>Replaced <code>AnimancerGUI.TempContent</code> with <code>ObjectPool.Disposable.AcquireContent</code>.</li>
+<li>Optimized the usage of <code>AnimancerPlayable.LayerList._Layers</code> so it doesn't need to be null-checked. This also means that to set the starting <code>Capacity</code> you should set the <code><a href="/animancer-v7-4/api/Animancer/LayerList/F9503FC6">AnimancerPlayable.LayerList.DefaultCapacity</a></code> before the <code>LayerList</code> gets created so that it doesn't create an array in the constructor then disard it as garbage when allocating a new one for the new capacity.</li>
+<li>Reduced the interface and generic constraints on <code>AnimancerTransition</code>.
+<ul>
+<li>Removed <code><a href="/animancer-v7-4/api/Animancer/ITransitionDetailed">ITransitionDetailed</a></code> members including <code>Events</code> and <code><a href="/animancer-v7-4/api/Animancer.FSM/State">State</a></code> since you should generally be using the new <a href="../../manual/transitions/assets#unshared">UnShared Transition Asset</a> system if you're accessing those properties on <a href="../../manual/transitions/assets">Transition Assets</a> (and if not, you can just access them through the <code>Transition</code> property.</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer/ITransitionWithEvents">ITransitionWithEvents</a></code>.</li>
+</ul>
+</li>
+<li>Cleaned up the <code><a href="/animancer-v7-4/api/Animancer/ObjectPool">ObjectPool</a></code> system:
+<ul>
+<li>Standardised methods so all categories (object, list, set) have <code>T Acquire()</code>, <code>void Acquire(out T)</code>, <code>Release(T)</code>, and <code>Release(ref T)</code> methods.</li>
+<li>Renamed <code>ObjectPool&lt;T&gt;.SetMinCount</code> to <code>IncreaseCountTo</code>.</li>
+<li>Added <code>ObjectPool&lt;T&gt;.IncreaseCapacityTo</code>.</li>
+<li>Moved <code>ObjectPool.GetCachedResult</code> to <code><a href="/animancer-v7-4/api/Animancer.Editor/AnimancerEditorUtilities">AnimancerEditorUtilities</a></code>.</li>
+<li>Changed <code><a href="/animancer-v7-4/api/Animancer/Disposable">ObjectPool.Disposable</a></code> into a <code>struct</code> to avoid the need for a <code>LazyStack</code>.</li>
+</ul>
+</li>
+<li>Changed <code><a href="/animancer-v7-4/api/Animancer/EventDispatcher">AnimancerState.EventDispatcher</a></code> to be <code>public</code>.
+<ul>
+<li>Removed <code>AnimancerState.EventPoolCapacity</code>, <code>EventPoolCount</code>, and <code>SetMinEventPoolCount</code> since <code>ObjectPool&lt;<a href="/animancer-v7-4/api/Animancer/EventDispatcher">AnimancerState.EventDispatcher</a>&gt;</code> can now be accessed directly.</li>
+</ul>
+</li>
+<li>Refactored <code>AnimancerEditorUtilities.GetComponentInHierarchy</code>:
+<ul>
+<li>Moved it to <code><a href="/animancer-v7-4/api/Animancer/AnimancerUtilities">AnimancerUtilities</a></code>.</li>
+<li>Renamed it to <code>GetComponentInParentOrChildren</code>.</li>
+<li>Changed it into a <code>GameObject</code> Extension Method.</li>
+</ul>
+</li>
+</ul>
+<h1 id="improvements">Improvements</h1>
+<ul>
+<li>Improved the way Inspector field widths in Mixer Transitions adjust to large windows. <a href="https://github.com/KybernetikGames/animancer/issues/90">#90</a></li>
+<li>Replaced empty array creation with <code>Array.Empty</code>.</li>
+<li>Improved enumerator implementations:
+<ul>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer/FastEnumerator_1">FastEnumerator&lt;T&gt;</a></code> to replace custom <code>IEnumerabl&lt;T&gt;</code> implementations.</li>
+<li>Changed <code>AnimancerNode.GetEnumerator</code> to return a <code>FastEnumerator&lt;<a href="/animancer-v7-4/api/Animancer/AnimancerState">AnimancerState</a>&gt;</code> to avoid allocating any garbage.</li>
+<li>Since <code>MixerState.GetEnumerator</code> uses it too, this means it can no longer skip over <code>null</code> states (which is good, because that wasn't consistent with other implementations).</li>
+<li>Removed the <code>IEnumerable&lt;<a href="/animancer-v7-4/api/Animancer/AnimancerState">AnimancerState</a>&gt;</code> interface from <code><a href="/animancer-v7-4/api/Animancer/AnimancerComponent">AnimancerComponent</a></code> and <code><a href="/animancer-v7-4/api/Animancer/AnimancerPlayable">AnimancerPlayable</a></code> to reduce clutter. The same effect can still be achieved by iterating through the <code><a href="/animancer-v7-4/api/Animancer/AnimancerPlayable/1CB93800">AnimancerPlayable.States</a></code> (which only includes states registered with a key) or <code><a href="/animancer-v7-4/api/Animancer/AnimancerPlayable/012372D7">AnimancerPlayable.Layers</a></code> (and then iterating through each of their states).</li>
+<li>Changed <code><a href="/animancer-v7-4/api/Animancer/StateDictionary">AnimancerPlayable.StateDictionary</a></code> to implement <code>IEnumerable&lt;<a href="/animancer-v7-4/api/Animancer/AnimancerState">AnimancerState</a>&gt;</code> instead of <code>IEnumerable&lt;KeyValuePair&lt;object, <a href="/animancer-v7-4/api/Animancer/AnimancerState">AnimancerState</a>&gt;&gt;</code> since the keys can be accessed via the <code><a href="/animancer-v7-4/api/Animancer/AnimancerState/44AF9D9B">AnimancerState.Key</a></code> anyway.</li>
+<li>Removed <code><a href="/animancer-v7-4/api/Animancer/Sequence">AnimancerEvent.Sequence</a></code> copy constructors that take <code>ICollection</code> and <code>IEnumerable</code>. The one that takes a <code>Sequence</code> is still there and the <code>AddRange</code> method can be called manually.</li>
+<li>Changed <code>AnimancerPlayable.LayerList.GetEnumerator</code> to use a <code>FastEnumerator&lt;<a href="/animancer-v7-4/api/Animancer/AnimancerLayer">AnimancerLayer</a>&gt;</code> and properly respect the <code>Count</code>.</li>
+</ul>
+</li>
+<li>Reworked <code><a href="/animancer-v7-4/api/Animancer.Editor/ReadMe">ReadMe</a></code> to be inheritable (so the <a href="/platformer">Platformer Game Kit</a> can use the same structure).</li>
+<li>Added <code>AnimancerUtilities.IsNullOrEmpty</code> and <code>SetLength</code> for arrays.</li>
+<li>Added <code>IsValid</code> properties for Mixer Transitions.</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer/IPlayableWrapper/4AC2A311">IPlayableWrapper.Weight</a></code>.</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer/IWrapper">IWrapper</a></code> for <a href="../../manual/transitions/assets">Transition Assets</a> and <a href="../../manual/transitions/assets#unshared">UnShared</a> references to use the details of their transition without re-declaring all the members and restricting the allowed generic arguments.</li>
+<li>Added a specific <code>NullReferenceException</code> to <code>AnimancerTransition.Events</code> if the <code>SerialilzedEvents</code> is null.</li>
+<li>Added <code>AnimancerEditorUtilities.ToStringCached</code> for reducing garbage when converting <code>float</code>s to <code>string</code>s.</li>
+<li>Added <code>AnimationGatherer.logExceptions</code> to control whether exceptions during gathering should be logged (default is to ignore them). This replaces the old system which kept all exceptions in a list so that the <a href="../../manual/transitions/previews">Transition Preview Window</a> could display them.</li>
+<li>Replaced most <code>GUI.enabled</code> access with <code>EditorGUI.DisabledScope</code>.</li>
+<li><code><a href="/animancer-v7-4/api/Animancer/OptionalWarning">OptionalWarning</a></code>:
+<ul>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer/Validate/220E6D81">Validate.PermanentlyDisabledWarnings</a></code> which can be accessed manually in the Settings panel of the <a href="../../manual/tools">Animancer Tools Window</a> or the Inspector of the <code><a href="/animancer-v7-4/api/Animancer.Editor/AnimancerSettings">AnimancerSettings</a></code> asset.</li>
+<li>Improved the warning message for <code>OptionalWarning.DuplicateEvent</code>.</li>
+<li>Added <code>OptionalWarning.UselessEvent</code> for detecting empty events.</li>
+<li>Added <code>OptionalWarning.NativeControllerHumanoid</code> for when an Animator's Controller field is assigned on a Humanoid Rig and <code>NativeControllerHybrid</code> for when an Animator's Controller field is assigned while also using a <code><a href="/animancer-v7-4/api/Animancer/HybridAnimancerComponent">HybridAnimancerComponent</a></code>.</li>
+</ul>
+</li>
+<li>Improved the formatting of <code>AnimancerEvent.ToString</code> and <code>AppendDetails</code>.</li>
+<li>Improved the formatting of <code>AnimancerEvent.Sequence.DeepToString</code>.</li>
+<li>Removed the <code><a href="/animancer-v7-4/api/Animancer.Editor/AnimancerSettings">AnimancerSettings</a></code> creation message since it wasn't very useful and could easily distract new users.</li>
+<li>Improved <code><a href="/animancer-v7-4/api/Animancer/Sequence">AnimancerEvent.Sequence</a></code>:
+<ul>
+<li>Improved the formatting of <code>AnimancerEvent.Sequence.DeepToString</code>.</li>
+<li>Un-<code>sealed</code> <code><a href="/animancer-v7-4/api/Animancer/Sequence">AnimancerEvent.Sequence</a></code> and <code><a href="/animancer-v7-4/api/Animancer/Serializable">AnimancerEvent.Sequence.Serializable</a></code>.</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer/Sequence/6511790C">AnimancerEvent.Sequence.IndexOf(AnimancerEvent)</a></code> (and <code>IndexOfRequired</code>).</li>
+<li>Added <code>AnimancerEvent.Sequence.SetNormalizedTime</code>.</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer/Serializable/6CD06CEE">AnimancerEvent.Sequence.Serializable.NormalizedTimes</a></code>, <code>Callbacks</code>, and <code>Names</code> for <code>public</code> access.</li>
+</ul>
+</li>
+</ul>
+<h1 id="fsm">FSM</h1>
+<ul>
+<li>Improved the <a href="../../manual/fsm">Finite State Machine</a> documentation.</li>
+<li>Improved the <code>StateChange</code> and <code>KeyChange</code> system:
+<ul>
+<li>Extremely minor performance optimizations.</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer.FSM/StateChange_1/1AD48CE2">StateChange&lt;TState&gt;.StateMachine</a></code> for accessing the <code>StateMachine</code> that the change is occurring in.</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer.FSM/IKeyedStateMachine_1">IKeyedStateMachine&lt;TKey&gt;</a></code> for accessing keyed state machines without their state type. Specifically, this allows <code><a href="/animancer-v7-4/api/Animancer.FSM/KeyChange_1">KeyChange&lt;TKey&gt;</a></code> to hold the <code>StateMachine</code> without needing a <code>TState</code> parameter.</li>
+<li>Improved the error message given when the incorrect type of change is accessed to make it clearer what needs to be fixed and give a link to the documentation.</li>
+<li>The change structs now implement <code>IDisposable</code> so they can be used in simple <code>using</code> statements instead of needing a call to <code>Begin</code> followed by a <code>try/finally</code> block which manually calls <code>End</code>. This makes the usage in the <code>StateMachine</code> classes much neater.</li>
+</ul>
+</li>
+<li>Optimized <code>StateMachine&lt;TKey, TState&gt;.TrySetState</code> to not allocate any garbage (it used to box the keys to call <code>object.Equals</code>).</li>
+<li>Added <code>StateMachine&lt;T&gt;.WithDefault</code> to simplify the common pattern of initializing it in an <em>Idle</em> state and caching a <code>ForceIdleState</code> delegate for events to use.
+<ul>
+<li>This removes the need for a <code>[DefaultExecutionOrder]</code> attribute on the various <code>Character</code> classes in the examples.</li>
+<li>It also allows for easy implementation of an optional starting state separate from the default state such as in the <a href="/platformer">Platformer Game Kit</a> where the starting state is <em>Introduction</em> but the default state that others return back to is still the usual <em>Idle</em>.</li>
+</ul>
+</li>
+<li>Added <code><a href="/animancer-v7-4/api/Animancer.FSM/StateMachine_1">StateMachine&lt;TState&gt;</a></code> methods which take an <code>IList&lt;TState&gt;</code> to call <code>CanSetState</code>, <code>TrySetState</code>, or <code>TryResetState</code> on each of them until one succeeds.</li>
+<li>Added <code>Animancer.FSM.ReverseComparer</code>.</li>
+<li>Changed <code>StateSelector</code> to inherit from <code>SortedList&lt;float, TState&gt;</code> and use the <code>ReverseComparer</code>.
+<ul>
+<li>A state change can be attempted by passing the <code>StateSelector.Values</code> into any of the <code>StateMachine</code> methods that take an <code>IList</code>.</li>
+<li>It no longer allows multiple states to have the same priority.</li>
+<li>Its implementation is now much simpler.</li>
+</ul>
+</li>
+<li>Reworked the <code>InputBuffer</code> classes:
+<ul>
+<li>Replaced <code>TrySetState</code> with <code>Buffer</code> which just sets the state but doesn't try to enter it since that is handled by <code>Update</code> at the end of the frame.</li>
+<li>The <code>StateMachine</code> can now be changed after the constructor.</li>
+<li>Renamed <code>BufferedState</code> to <code><a href="/animancer-v7-4/api/Animancer.FSM/State">State</a></code>.</li>
+<li>Renamed <code>BufferedKey</code> to <code><a href="/animancer-v7-4/api/Animancer/Key">Key</a></code>.</li>
+<li>Renamed <code>IsBufferActive</code> to <code>IsActive</code>.</li>
+<li>Removed <code>UseUnscaledTime</code> since you can just pass <code>Time.unscaledDeltaTime</code> into <code>Update</code> if you want to use it.</li>
+<li>Removed <code>CheckBuffer</code> since you can just call <code>Update(0)</code>.</li>
+</ul>
+</li>
+<li>Changed <code><a href="/animancer-v7-4/api/Animancer.FSM/DelegateState">DelegateState</a></code> to use <code>public virtual</code> implementations of <code><a href="/animancer-v7-4/api/Animancer.FSM/IState">IState</a></code> members instead of explicit implementations.</li>
+</ul>
+<h1 id="fixes">Fixes</h1>
+<ul>
+<li>[Lite-Only] Added <code>FixProjectDefinition</code> to prevent the C# project files generated by Unity 2020+ from referencing the Runtime-Only Lite DLLs.</li>
+<li>Fixed setting the <code><a href="/animancer-v7-4/api/Animancer/AnimancerState/840B3EB1">AnimancerState.Time</a></code> before its <code>Playable</code> is created to properly assign it when it does get created.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer/PlayableAssetState">PlayableAssetState</a></code> to not cause exceptions in Unity 2021.1 due to its Playable duration not being set.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer/AnimancerPlayable/FEFD6C35">AnimancerPlayable.KeepChildrenConnected</a></code> to properly apply to the <code>AnimancerPlayable.PostUpdate</code>.</li>
+<li>Fixed <code>ArgumentOutOfRangeException</code> in <code><a href="/animancer-v7-4/api/Animancer.Editor/EventSequenceDrawer">EventSequenceDrawer</a></code> when dragging the end event if there were no other events and it was previously at its default value.</li>
+<li>Fixed <code>NullReferenceException</code> caused by accessing <code><a href="/animancer-v7-4/api/Animancer.Editor/AnimancerGUI">AnimancerGUI</a></code> during a static constructor since it tried to access <code>EditorStyles.miniButton</code>.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer.Editor/SpriteEditor">SpriteEditor</a></code> to properly display newly applied values.</li>
+<li>Fixed <code>PlayableAssetTransition.FadeMode</code> to always use <code>FixedSpeed</code> because <code>FromStart</code> is only supported for <code><a href="/animancer-v7-4/api/Animancer/ClipState">ClipState</a></code>s.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer/EventNamesAttribute">EventNamesAttribute</a></code> to consider the type of each value in the property chain.</li>
+<li>Fixed <code>AnimancerEvent.GetFadeOutDuration</code> to properly account for speed.</li>
+<li>Fixed <code>AnimancerEvent.Sequence.SetName</code> to allocate the full <code>Capacity</code> when expanding the array.</li>
+<li>Fixed <code>AnimancerEvent.Sequence.Add</code> and <code>Remove</code> to properly manage the <code>Names</code> array.</li>
+<li>Fixed <code>AnimancerEvent.Sequence.Remove</code> to correctly clear the name when removing the last event.</li>
+<li>Fixed <code>AnimancerEvent.Sequence.SetCallback</code> to give an error message when attempting to set it to <code>null</code> to explain that <code>AnimancerEvent.DummyCallback</code> can be used instead.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer/Serializable">AnimancerEvent.Sequence.Serializable</a></code> to always ensure its event data is sorted even when not set by the GUI.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer/Serializable/58019D8A">AnimancerEvent.Sequence.Serializable.Events</a></code> to not be cleared continuously when viewed in the Inspector and to be properly updated when making modifications.</li>
+<li>Fixed adding persistent calls to an <code><a href="/animancer-v7-4/api/Animancer/AnimancerEvent">AnimancerEvent</a></code> to properly assign its <code>Invoke</code> method to the runtime sequence in place of <code>AnimancerEvent.Dummy</code>.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer.Editor/SerializableEventSequenceDrawer">SerializableEventSequenceDrawer</a></code> so that modifying event names properly modifies the runtime sequence.</li>
+<li>Fixed potential <code>NullReferenceException</code> in <code>AnimancerEvent.Sequence.Insert</code>.</li>
+<li>Fixed potential <code>NullReferenceException</code> in <code>AnimancerPlayable.GetKey</code>.</li>
+<li>Fixed <code>AnimancerPlayable.SetOutput</code> to throw an exception if the specified <code>Animator</code> component is null or if it's a prefab.</li>
+<li>Fixed <code>AnimancerUtilities.EditModePlay</code> to do nothing if the target is a prefab.</li>
+<li>Fixed <code>ManualMixerTransition.Apply</code> to call <code>Apply</code> on any child states created by transitions.</li>
+<li>Fixed the <code><a href="/animancer-v7-4/api/Animancer/LinearMixerState">LinearMixerState</a></code> threshold calculation function <code>Evenly Spaced</code> to give usable thresholds if the first and last have the same value.</li>
+<li>Fixed <code>ControllerState.ValidateHasParameter</code> to skip Animator Controllers loaded from Asset Bundles because they don't contain the editor-only data needed to perform the validation. <a href="https://github.com/KybernetikGames/animancer/issues/123">#123</a></li>
+<li>Fixed <code>EventSequenceDrawer.DoTimeGUI</code> to not cause End Time fields to set the preview time when they are deselected.</li>
+<li>Fixed various issues in <code><a href="/animancer-v7-4/api/Animancer.Editor/TimelineGUI">TimelineGUI</a></code>:
+<ul>
+<li>Fixed fade display to properly account for speed and display correctly when <code>Speed</code> is <code>NaN</code>.</li>
+<li>Fixed it to correctly show loop increments of the current preview time.</li>
+<li>Fixed it to not show preview loop time indicators if they would be too close together to be useful.</li>
+</ul>
+</li>
+<li>Fixed various issues in the <a href="../../manual/transitions/previews">Transition Preview Window</a>:
+<ul>
+<li>Fixed the <code>Icon</code> to be appropriate for the Unity Editor's Dark Theme.</li>
+<li>Fixed <code>TransitionPreviewWindow.Animations.PlayOther</code> to not attempt to assign infinity values to the <code><a href="/animancer-v7-4/api/Animancer/AnimancerState/617EFC91">AnimancerState.NormalizedTime</a></code>.</li>
+<li>Fixed model selection to not cause an exception if there are missing models.</li>
+<li>Fixed model selection to not accept a best match model unless at least half of the bindings match.</li>
+</ul>
+</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer.Editor/TransitionDrawer">TransitionDrawer</a></code> and <code><a href="/animancer-v7-4/api/Animancer.Editor/TransitionPreviewWindow">TransitionPreviewWindow</a></code> to support <code>[SerializeReference]</code> fields.</li>
+<li>Fixed Transitions to allow <a href="https://kybernetik.com.au/inspector-gadgets/docs/script-inspector/object-reference-fields#nested-inspector">Inspector Gadgets Nested Object Inspectors</a> for their main asset (the <code>AnimationClip</code> for a <code><a href="/animancer-v7-4/api/Animancer/ClipTransition">ClipTransition</a></code>, the <code>AnimatorController</code> for a <code><a href="/animancer-v7-4/api/Animancer/ControllerTransition">ControllerTransition</a></code>, etc.).</li>
+<li>Fixed dragging <a href="../../manual/events/animancer">Animancer Events</a> in Unity 2019.4+ to keep the correct event selected when they get sorted (because they need to be ordered by time).</li>
+<li>Fixed fade duration not being affected by <code>Time.timeScale</code> in Unity 2021. <a href="https://github.com/KybernetikGames/animancer/issues/129">#129</a></li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer/SoloAnimation">SoloAnimation</a></code> to only play when enabled rather than in <code>Awake</code>.</li>
+<li>Fixed several bugs in <code>Key.KeyedList</code> and improved comments.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer.Editor/AnimancerSettings">AnimancerSettings</a></code> to not be lost when upgrading from Animancer Lite to Pro.</li>
+<li>Fixed <code>AnimancerToolsWindow.PackTextures</code> to not throw an exception if any of the textures in the list are <code>null</code>.</li>
+<li>Fixed <code>AnimancerToolsWindow.SpriteModifierPanel</code> to work for <code>SpriteImportMode.Single</code>.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer/ClipTransitionSequence">ClipTransitionSequence</a></code> to account for the full sequence in <code>IsValue</code>, <code>IsLooping</code>, <code>MaximumDuration</code>, <code>AverageAngularSpeed</code>, <code>AverageVelocity</code>, and <code>GatherAnimationClips</code>.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer/ClipTransitionSequence">ClipTransitionSequence</a></code> to allow for the possibility that the first transition's End Event could be set and reassign that callback to the last transition instead.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer/ClipTransitionSequence">ClipTransitionSequence</a></code> to properly initialize its end events in case the runtime sequence gets initialized multiple times.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer.Editor/TransitionDrawer">TransitionDrawer</a></code> to only target <code><a href="/animancer-v7-4/api/Animancer/ITransitionDetailed">ITransitionDetailed</a></code> rather than <code><a href="/animancer-v7-4/api/Animancer/ITransition">ITransition</a></code> since it needs the extra details.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer.Editor/TransitionPreviewWindow">TransitionPreviewWindow</a></code> auto-close to not cause GUI errors.</li>
+<li>Fixed <code>Validate.AssertPlayable</code> to destroy an invalid node.</li>
+<li>Fixed potential <code>NullReferenceException</code> in <code><a href="/animancer-v7-4/api/Animancer.Editor/PropertyReference">Serialization.PropertyReference</a></code>.</li>
+<li>Fixed <code><a href="/animancer-v7-4/api/Animancer.Editor/BoolPref">BoolPref</a></code> to properly load its value if it gets shown in a menu before being accessed.</li>
+</ul>
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                <strong><div style="text-align:left; display:flex">
+
+<div>
+<p>Documentation</p>
+<p><a href="/animancer-v7-4/docs/examples">Examples</a></p>
+<p><a href="/animancer-v7-4/docs/manual">User Manual</a></p>
+<p><a href="/animancer-v7-4/docs/changes">Change Log</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Download</p>
+<p><a href="https://kybernetik.itch.io/animancer-pro">Itch.io (Recommended)</a></p>
+<p><a href="https://assetstore.unity.com/packages/tools/animation/animancer-pro-116514?aid=1100l8ah5">Asset Store (Animancer Pro)</a></p>
+<p><a href="https://assetstore.unity.com/packages/tools/animation/animancer-lite-116516?aid=1100l8ah5">Asset Store (Animancer Lite)</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Contact</p>
+<p><a href="https://github.com/KybernetikGames/animancer/issues">Github Issues</a></p>
+<p><a href="/animancer-v7-4/redirect/forum">Unity Forum</a></p>
+<p><a href="mailto:animancer@kybernetik.com.au?subject=Animancer">Email</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Other Assets</p>
+<p><a href="/flexi-motion">FlexiMotion</a></p>
+<p><a href="/inspector-gadgets">Inspector Gadgets</a></p>
+<p><a href="/weaver">Weaver</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>&nbsp;</p>
+<p><a href="https://assetstore.unity.com/packages/vfx/shaders/simple-sun-shader-72042?aid=1100l8ah5">Simple Sun Shader</a></p>
+<p><a href="https://assetstore.unity.com/packages/tools/version-control/link-sync-229569?aid=1100l8ah5">Link &amp; Sync</a></p>
+<p><a href="/ultevents">UltEvents</a></p>
+</div>
+
+</div></strong>
+<script src="/animancer-v7-4/assets/js/pngif.js"></script>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>
